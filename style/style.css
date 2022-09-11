@@ -131,7 +131,10 @@ margin-right: 0px;
 .phone-mail .phone-head{
   margin-left: 40px;
 }
-ul > .linknow a {
+.head .head .site-nav .linknow {
+  color: var(--hover_text_color);
+}
+.site-nav-linknow {
   color: var(--hover_text_color);
 }
 .blue-__ {
