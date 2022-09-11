@@ -144,12 +144,13 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="item">
             <li class="image">
-              <div class="">
-              <img
-                src="./img/analitic.jpg"
-                alt="Картинка Аналитики"
-                width="370"
-                </div>
+            
+                <img
+                  src="./img/analitic.jpg"
+                  alt="Картинка Аналитики"
+                  width="370"
+                  />
+            
               
               <p class="text-img">Десктопные приложения</p>
             </li>
@@ -338,8 +339,8 @@
                 ><span class="web-logo">Web</span
                 ><span class="studio-logo-foot">Studio</span></a
               >
-              <address class="adress">
-                <div>
+            <address class="adress">
+                
                 <p class="adres_street">г. Киев, пр-т Леси Украинки, 26</p>
                 <ul class="contact-footer">
                   <li class="item">
@@ -377,7 +378,21 @@
                         </svg></a></li>
                         
                     </ul>
+                  
               </div>
+                 <form class="js-speaker-form">
+                  <div class="subscribe-to-the-newsletter">
+                        <label class="social-foot-p" for="mail">Подпишитесь на рассылку</label>
+                        <div class="block">
+                        <input class="input" type="email" name="mail" id="mail" placeholder="E-mail" autocomplete="email">
+                        
+                        <button class="button" type="submit">Подписаться <svg class="icon" width="24"  height="24">
+                            <use href="./img/symbol-defs.svg#icon-send"></use>
+                          </svg> </button>
+                        
+                        </div>
+                      </div>
+                  </form>
       </div>
     </footer>
           <div class="backdrop is-hidden" data-modal>
@@ -385,32 +400,56 @@
             <button class="button-close" data-modal-close >           
                 <svg class="icon" width="11" height="11">
                 <use href="./img/symbol-defs.svg#icon-vector"></use>
+                </svg> 
             </button>
         
-            <form action="js-speaker-form" class="modal-text">
-                  <p>Оставьте свои данные, мы вам перезвоним</p>
-                  <div class="text">
-                      <label  for="name">Имя</label>
-                    <input class="r" type="text" name="name" id="name">
-                </div>
-                <div class="text">
-              <label for="phone">Телефон</label>
-              <input type="phone" name="phone" id="phone">
-                </div>
-              <div class="text">
-            <label for="mail">Почта</label>
-              <input type="email" name="mail" id="mail">
-                  </div>
-             <div class="text">
-                <label class="" for="comment">Комментарий</label>
-                <textarea class="text comment-id" name="comment" id="comment"></textarea>
-              </div>
-                <div class="agreement">
-              <input type="checkbox" name="topic" value="mailinglist" id="mailinglist">
-              <label for="mailinglist">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-              </div>
-              <button type="submit">Отправить</button>  
-          </form>
+          <form class="modal-text js-speaker-form">
+                        <p class="name">Оставьте свои данные, мы вам перезвоним</p>
+                        <div class="text">
+                            <label class="item"  for="name">Имя</label>
+                          
+                            <div class="pos-relative">
+                          <input class="window" type="text" name="name" id="name" autocomplete="off">
+                              <span class="icon"> <svg class="icon" width="18"  height="18">
+                                <use href="./img/symbol-defs.svg#icon-person-modal"></use>
+                              </svg> </span>
+                          </div>
+                        </div>
+                      <div class="text">
+                    <label class="item"  for="phone">Телефон</label>
+                    <div class="pos-relative">
+                    <input class="window" type="tel" name="phone" id="phone" autocomplete="off">
+                    <span class="icon"> <svg class="icon" width="18"  height="18">
+                                <use href="./img/symbol-defs.svg#icon-phone-modal"></use>
+                              </svg> </span>
+                      </div>    
+                            </div>
+                        <div class="text">
+                            <label class="item"  for="email">Почта</label>
+                            <div class="pos-relative">  
+                              <input class="window" type="email" name="email" id="email" autocomplete="off">
+                              <span class="icon"> <svg class="icon" width="18"  height="18">
+                                    <use href="./img/symbol-defs.svg#icon-email-modal"></use>
+                                  </svg> </span>
+                            </div>
+                          </div>
+                      <div class="text">
+                        
+                          <label  class="item" for="comment">Комментарий</label> 
+                          
+                          <textarea placeholder="Введите текст" class="text comment-id window" name="comment" id="comment" autocomplete="off"></textarea>
+                        </div>
+                        <div class="button-flex">
+                          <div class="agreement">
+                            <label class="itempolicy"><a class="element" href="">Условия договора</a>Соглашаюсь с рассылкой и принимаю
+                                <input class="checkbox" type="checkbox">
+                                 <span class="icon"></span>   
+                          </label>
+                         
+                        </div>
+                        <button class="chek-button" type="submit">Отправить</button>  
+                        </div>
+            </form>
         </div>
          
     </div>

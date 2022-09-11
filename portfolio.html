@@ -244,8 +244,8 @@
                 ><span class="web-logo">Web</span
                 ><span class="studio-logo-foot">Studio</span></a
               >
-              <address class="adress">
-                <div>
+            <address class="adress">
+                
                 <p class="adres_street">г. Киев, пр-т Леси Украинки, 26</p>
                 <ul class="contact-footer">
                   <li class="item">
@@ -283,9 +283,36 @@
                         </svg></a></li>
                         
                     </ul>
+                  
               </div>
+                 <form class="js-speaker-form">
+                  <div class="subscribe-to-the-newsletter">
+                        <label class="social-foot-p" for="mail">Подпишитесь на рассылку</label>
+                        <div class="block">
+                        <input class="input" type="email" name="mail" id="mail" placeholder="E-mail" autocomplete="email">
+                        
+                        <button class="button" type="submit">Подписаться <svg class="icon" width="24"  height="24">
+                            <use href="./img/symbol-defs.svg#icon-send"></use>
+                          </svg> </button>
+                        
+                        </div>
+                      </div>
+                  </form>
       </div>
     </footer>
+            <script>
+        (() => {
+            document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}: ${value}`),
+                );
+
+                e.currentTarget.reset();
+            });
+        })();
+    </script>
   </body>
   
 </html>
